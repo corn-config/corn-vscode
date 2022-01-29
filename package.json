@@ -3,6 +3,7 @@
     "displayName": "Corn",
     "description": "Language support for the Corn config language",
     "version": "0.0.1",
+    "repository": "https://github.com/JakeStanger/corn-vscode",
     "engines": {
         "vscode": "^1.63.0"
     },
