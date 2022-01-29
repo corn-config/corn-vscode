@@ -1,0 +1,92 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Corn",
+  "patterns": [
+	{
+	  "include": "#operators"
+	},
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#constants"
+    },
+    {
+      "include": "#strings"
+    },
+    {
+      "include": "#inputs"
+    },
+    {
+      "include": "#comments"
+    },
+	{
+		"include": "#keys"
+	}
+  ],
+  "repository": {
+	"operators": {
+		"patterns": [
+		  {
+			"name": "keyword.operator.corn",
+			"match": "(=|\\.)"
+		  }
+		]
+	  },
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.corn",
+          "match": "\\b(let|in)\\b"
+        }
+      ]
+    },
+    "constants": {
+      "patterns": [
+        {
+          "name": "constant.language.corn",
+          "match": "\\b(true|false|null)\\b"
+        },
+        {
+          "name": "constant.numeric.corn",
+          "match": "\\b-?[0-9]+(?:\\.[0-9]+)?\\b"
+        }
+      ]
+    },
+    "strings": {
+      "name": "string.quoted.double.corn",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape.corn",
+          "match": "\\\\."
+        }
+      ]
+    },
+    "inputs": {
+      "patterns": [
+        {
+          "name": "variable.name.corn",
+          "match": "\\$[A-z_][A-z0-9_]*"
+        }
+      ]
+    },
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.line.corn",
+          "begin": "//",
+          "end": "$"
+        }
+      ]
+    },
+	"keys": {
+		"patterns": [{
+			"name": "entity.name.tag.corn",
+			"match": "\\b[A-z0-9_]+\\b"
+		}]
+	}
+  },
+  "scopeName": "source.corn"
+}

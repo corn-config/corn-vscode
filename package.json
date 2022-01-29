@@ -1,0 +1,25 @@
+{
+    "name": "corn",
+    "displayName": "Corn",
+    "description": "Language support for the Corn config language",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.63.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "corn",
+            "aliases": ["Corn", "corn"],
+            "extensions": [".corn"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "corn",
+            "scopeName": "source.corn",
+            "path": "./syntaxes/corn.tmLanguage.json"
+        }]
+    }
+}
