@@ -2,7 +2,7 @@
     "name": "corn",
     "displayName": "Corn",
     "description": "Language support for the Corn config language",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "repository": "https://github.com/JakeStanger/corn-vscode",
     "publisher": "jakestanger",
     "engines": {
