@@ -11,3 +11,4 @@ ext install JakeStanger.corn
 Currently this provides:
 
 - Syntax highlighting
+- Support for bracket matching and commenting
